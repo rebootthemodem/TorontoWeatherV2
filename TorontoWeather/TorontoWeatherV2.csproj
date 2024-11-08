@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>netstandard2.0</TargetFramework>
+	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	  <PackageId>TorontoWeatherSirSir</PackageId>
+	  <Version>1.0.2</Version>
+	  <Authors>SirSir</Authors>
+	  <Description>A simple library to get Toronto weather using Open-Meteo API.</Description>
+	  <Title>Weather App</Title>
+	  <Copyright>SirSir2024</Copyright>
+	  <PackageReadmeFile>Readme.md</PackageReadmeFile>
+	  <RepositoryUrl>github.com/tempfornow</RepositoryUrl>
+	  <RepositoryType>git</RepositoryType>
+	  <PackageTags>weather,toronto,sirsir,bingo</PackageTags>
+	  <PackageReleaseNotes>first version</PackageReleaseNotes>
+	  <AssemblyVersion>1.1.1.1</AssemblyVersion>
+	  <FileVersion>1.1.1.1</FileVersion>
+	  <PackageLicenseExpression>MIT</PackageLicenseExpression>
+	  <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+	  <PackageProjectUrl>example.com/tempfornow</PackageProjectUrl>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="WeatherService - Copy.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="System.Net.Http" Version="4.3.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
